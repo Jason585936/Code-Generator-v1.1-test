@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Code Generator</h1>
+
+    <!-- Options -->
+    <div class="options">
+        <label><input type="checkbox" id="uppercase"> Capital Letters</label><br>
+        <label><input type="checkbox" id="lowercase"> Lowercase Letters</label><br>
+        <label><input type="checkbox" id="numbers"> Numbers</label>
+    </div>
+
+    <!-- Slider under Numbers -->
+    <div class="slider">
+        <label for="length">Length: <span id="lengthValue">12</span></label><br>
+        <input type="range" id="length" min="4" max="50" value="12">
+    </div>
+
+    <!-- Output -->
+    <input 
+        type="text" 
+        id="output" 
+        placeholder="Generated code will be here"
+        readonly
+    >
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="generateCode()">Generate</button>
+        <button onclick="copyCode()">Copy</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
